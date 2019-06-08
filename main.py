@@ -12,7 +12,7 @@ from keras.models import *
 from keras.optimizers import *
 import numpy as np
 
-MANIFEST_DIR = "Bear_data/train.csv"
+MANIFEST_DIR = "bearing_for_you/train.csv"
 Batch_size = 20
 Long = 792
 Lens = 640
@@ -45,7 +45,7 @@ def xs_gen(path=MANIFEST_DIR,batch_size = Batch_size,train=True,Lens=Lens):
 
             yield batch_x, batch_y
 
-TEST_MANIFEST_DIR = "Bear_data/test_data.csv"
+TEST_MANIFEST_DIR = "bearing_for_you/test_data.csv"
 
 def ts_gen(path=TEST_MANIFEST_DIR,batch_size = Batch_size):
 
